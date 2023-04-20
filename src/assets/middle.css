@@ -1,0 +1,23 @@
+.middle {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fasz {
+  position: absolute;
+  left: 24%;
+}
+
+ul {
+  display: flex;
+  gap: 10vw;
+}
+
+li {
+  padding: 6.5vh;
+  border: 1px solid red;
+  list-style-type: none;
+}
