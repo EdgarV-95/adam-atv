@@ -1,23 +1,19 @@
 .middle {
-  height: 60vh;
+  height: 65vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.fasz {
-  position: absolute;
-  left: 24%;
+  gap: 2vw;
 }
 
 ul {
   display: flex;
-  gap: 10vw;
+  gap: 8.5vw;
 }
 
 li {
-  padding: 6.5vh;
-  border: 1px solid red;
+  padding: 8.5vh;
+  border: 1px solid rgb(209, 207, 207);
   list-style-type: none;
 }

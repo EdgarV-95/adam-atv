@@ -17,22 +17,14 @@ function App() {
         </div>
       </div>
       <div className="middle">
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+        <ListItem />
+        <ListItem />
       </div>
     </div>
   );
 }
 
-function Navbar() {
+const Navbar = () => {
   return (
     <>
       <nav className="navbar navbar-dark bg-dark shadow-sm">
@@ -53,6 +45,38 @@ function Navbar() {
       </nav>
     </>
   );
-}
+};
+
+const ListItem = () => {
+  const [hoveredItem, setHoveredItem] = useState(null);
+
+  const handleMouseOver = (index) => {
+    setHoveredItem(index);
+  };
+
+  const handleMouseOut = () => {
+    setHoveredItem(null);
+  };
+
+  return (
+    <ul>
+      {[1, 2, 3].map((item, index) => (
+        <li
+          key={index}
+          onMouseOver={() => handleMouseOver(index)}
+          onMouseOut={handleMouseOut}
+          style={{
+            boxShadow:
+              index === hoveredItem
+                ? 'rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px'
+                : '',
+          }}
+        >
+          Item {item}
+        </li>
+      ))}
+    </ul>
+  );
+};
 
 export default App;
