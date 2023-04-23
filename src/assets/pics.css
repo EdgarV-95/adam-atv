@@ -39,3 +39,8 @@ li {
 .third-ul {
   padding-top: 20vh;
 }
+
+li {
+  background-image: url('./small.jpeg');
+  background-size: cover;
+}

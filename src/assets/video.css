@@ -1,0 +1,14 @@
+.video-field {
+  height: 100vh;
+  position: relative;
+}
+
+.bckg-pic {
+  height: 40vh;
+  background-image: url('./page-title.jpg');
+  background-size: none;
+}
+
+.vid-1 {
+  height: 30vh;
+}

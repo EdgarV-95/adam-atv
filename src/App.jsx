@@ -3,6 +3,7 @@ import './App.css';
 import './assets/top.css';
 import './assets/middle.css';
 import './assets/pics.css';
+import './assets/video.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
@@ -11,8 +12,8 @@ function App() {
       <div className="top">
         <Navbar />
         <div className="text-center">
-          <h3 class="text">Baia Mare, Maramures</h3>
-          <h1 class="text">O experiență de neuitat</h1>
+          <h3 className="text">Baia Mare, Maramures</h3>
+          <h1 className="text">O experiență de neuitat</h1>
         </div>
       </div>
       <div className="middle">
@@ -43,7 +44,7 @@ function App() {
         <h3 className="fotografii-txt">Imagini</h3>
         <div className="pictures">
           <ul className="first-ul">
-            <li>1</li>
+            <li className="firstLi"></li>
             <li>2</li>
           </ul>
           <ul className="second-ul">
@@ -56,7 +57,13 @@ function App() {
           </ul>
         </div>
       </div>
-      <div className="video-field"></div>
+      <div className="video-field">
+        <div className="bckg-pic">
+          <h3 className="fotografii-txt">Videoclipuri</h3>
+          <div className="vid-1"></div>
+          <div className="vid-2"></div>
+        </div>
+      </div>
     </div>
   );
 }
@@ -69,7 +76,10 @@ const Navbar = () => {
           Acasă
         </a>
         <a className="nav-link text-bg-dark" href="#">
-          Imagini & Videoclipuri
+          Imagini
+        </a>
+        <a className="nav-link text-bg-dark" href="#">
+          Videoclipuri
         </a>
         <a className="nav-link text-bg-dark" href="#">
           Conctact
