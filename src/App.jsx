@@ -10,7 +10,9 @@ const App = () => {
   return (
     <div className="App">
       <div className="top" id="acasa">
-        <Navbar />
+        <div className="navbar-lul">
+          <Navbar />
+        </div>
         <div className="text-center">
           <h3 className="text">Baia Mare, Maramures</h3>
           <h1 className="text">O experiență de neuitat</h1>

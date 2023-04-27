@@ -18,6 +18,16 @@
   align-items: center;
 }
 
+.navbar-lul {
+  padding-top: 2vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateX(20%);
+  z-index: 999;
+}
+
 .navbar {
   width: 60vw;
   height: 7vh;
