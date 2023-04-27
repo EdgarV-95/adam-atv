@@ -1,0 +1,49 @@
+.video-field {
+  height: 100vh;
+  position: relative;
+}
+
+.videoclipuri-txt {
+  text-align: center;
+  padding-top: 3vh;
+  padding-bottom: 3.5vh;
+}
+
+.bckg-pic {
+  height: 40vh;
+  background-image: url('../pics/page-title.jpg');
+  background-size: none;
+}
+
+.carousel-field {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10vh;
+}
+
+.carousel-control-prev {
+  height: 300px;
+}
+
+.carousel-control-next {
+  height: 300px;
+}
+
+.carousel .carousel-control-prev-icon {
+  visibility: hidden;
+}
+
+.carousel:hover .carousel-control-prev-icon {
+  visibility: visible;
+}
+
+.carousel .carousel-control-next-icon {
+  visibility: hidden;
+}
+
+.carousel:hover .carousel-control-next-icon {
+  visibility: visible;
+}

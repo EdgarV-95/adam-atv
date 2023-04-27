@@ -1,12 +1,17 @@
-import { useState } from 'react';
 import './App.css';
-import './assets/top.css';
-import './assets/middle.css';
-import './assets/pics.css';
-import './assets/video.css';
+import './assets/css/top.css';
+import './assets/css/middle.css';
+import './assets/css/pics.css';
+import './assets/css/video.css';
+import './assets/css/contact.css';
+import Vid1 from './assets/videos/beach.mp4';
+import Vid2 from './assets/videos/pexels.mp4';
+import Vid3 from './assets/videos/sunset.mp4';
 import 'bootstrap/dist/css/bootstrap.css';
+import Carousel from 'react-bootstrap/Carousel';
+import ReactPlayer from 'react-player';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <div className="top">
@@ -59,14 +64,19 @@ function App() {
       </div>
       <div className="video-field">
         <div className="bckg-pic">
-          <h3 className="fotografii-txt">Videoclipuri</h3>
-          <div className="vid-1"></div>
-          <div className="vid-2"></div>
+          <h3 className="videoclipuri-txt">Videoclipuri</h3>
+          <div className="carousel-field">
+            <UncontrolledCarousel />
+            <UncontrolledCarousel />
+          </div>
         </div>
+      </div>
+      <div className="contact-us">
+        <p>fasz</p>
       </div>
     </div>
   );
-}
+};
 
 const Navbar = () => {
   return (
@@ -86,6 +96,45 @@ const Navbar = () => {
         </a>
       </div>
     </nav>
+  );
+};
+
+const UncontrolledCarousel = () => {
+  const videos = [
+    {
+      src: Vid1,
+      type: 'video/mp4',
+      alt: 'First slide',
+    },
+    {
+      src: Vid2,
+      type: 'video/mp4',
+      alt: 'Second slide',
+    },
+    {
+      src: Vid3,
+      type: 'video/mp4',
+      alt: 'Third slide',
+    },
+  ];
+  return (
+    <Carousel slide={false}>
+      {videos.map((vids, id) => {
+        return (
+          <Carousel.Item key={id}>
+            <ReactPlayer
+              url={vids.src}
+              pip={true}
+              controls={true}
+              playing={true}
+            />
+            <Carousel.Caption>
+              <h3>{vids.alt}</h3>
+            </Carousel.Caption>
+          </Carousel.Item>
+        );
+      })}
+    </Carousel>
   );
 };
 
