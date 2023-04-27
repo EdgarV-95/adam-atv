@@ -1,3 +1,22 @@
 .contact-us {
-  height: 100vh;
+  height: 85vh;
+}
+
+.contact-txt {
+  text-align: center;
+  padding-top: 3vh;
+  padding-bottom: 15vh;
+}
+
+.detalii {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15vh;
+}
+
+.detalii-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5vh;
 }

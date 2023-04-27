@@ -72,7 +72,33 @@ const App = () => {
         </div>
       </div>
       <div className="contact-us">
-        <p>fasz</p>
+        <div className="bckg-pic">
+          <h3 className="contact-txt">Contact</h3>
+          <div className="detalii">
+            <div className="detalii-txt">
+              <div className="phone">
+                <h4>Numar de telefon: 0123456789</h4>
+              </div>
+              <div className="email">
+                <h4>Email: random.email@random.com</h4>
+              </div>
+              <div className="address">
+                <h4>Address: Acasa la mine LOL</h4>
+              </div>
+            </div>
+            <div className="gmap">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.431742256961!2d23.544965477108903!3d47.656608571194575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4737dc49a4d7ed47%3A0xde77e7e9437d3540!2sVIVO*21%20Baia%20Mare!5e0!3m2!1sen!2suk!4v1682614641524!5m2!1sen!2suk"
+                width="600"
+                height="450"
+                style={{ border: '0' }}
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
