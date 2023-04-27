@@ -1,27 +1,22 @@
 import './App.css';
-import './assets/css/top.css';
-import './assets/css/middle.css';
-import './assets/css/pics.css';
-import './assets/css/video.css';
-import './assets/css/contact.css';
+import 'bootstrap/dist/css/bootstrap.css';
 import Vid1 from './assets/videos/beach.mp4';
 import Vid2 from './assets/videos/pexels.mp4';
 import Vid3 from './assets/videos/sunset.mp4';
-import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
 import ReactPlayer from 'react-player';
 
 const App = () => {
   return (
     <div className="App">
-      <div className="top">
+      <div className="top" id="acasa">
         <Navbar />
         <div className="text-center">
           <h3 className="text">Baia Mare, Maramures</h3>
           <h1 className="text">O experiență de neuitat</h1>
         </div>
       </div>
-      <div className="middle">
+      <div className="middle" id="acasa">
         <div class="mid-txt">
           <h3 className="informatie-txt">Informatie</h3>
           <h6 className="description">
@@ -45,7 +40,7 @@ const App = () => {
           </h6>
         </div>
       </div>
-      <div className="pictures-field">
+      <div className="pictures-field" id="imagini">
         <h3 className="fotografii-txt">Imagini</h3>
         <div className="pictures">
           <ul className="first-ul">
@@ -62,7 +57,7 @@ const App = () => {
           </ul>
         </div>
       </div>
-      <div className="video-field">
+      <div className="video-field" id="videoclipuri">
         <div className="bckg-pic">
           <h3 className="videoclipuri-txt">Videoclipuri</h3>
           <div className="carousel-field">
@@ -71,7 +66,7 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div className="contact-us">
+      <div className="contact-us" id="contact">
         <div className="bckg-pic">
           <h3 className="contact-txt">Contact</h3>
           <div className="detalii">
@@ -92,9 +87,9 @@ const App = () => {
                 width="600"
                 height="450"
                 style={{ border: '0' }}
-                allowfullscreen=""
+                allowFullScreen=""
                 loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
+                referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
           </div>
@@ -108,16 +103,16 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-dark bg-dark shadow-sm">
       <div className="container d-flex justify-content-evenly">
-        <a className="nav-link text-bg-dark" href="#">
+        <a className="nav-link text-bg-dark" href="#acasa">
           Acasă
         </a>
-        <a className="nav-link text-bg-dark" href="#">
+        <a className="nav-link text-bg-dark" href="#imagini">
           Imagini
         </a>
-        <a className="nav-link text-bg-dark" href="#">
+        <a className="nav-link text-bg-dark" href="#videoclipuri">
           Videoclipuri
         </a>
-        <a className="nav-link text-bg-dark" href="#">
+        <a className="nav-link text-bg-dark" href="#contact">
           Conctact
         </a>
       </div>
